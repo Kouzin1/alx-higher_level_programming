@@ -30,7 +30,7 @@ class Node:
     @property
     def next_node(self):
         """Get/set the next_node of the Node."""
-        return self.__next_node
+        return (self.__next_node)
 
     @next_node.setter
     def next_node(self, value):
