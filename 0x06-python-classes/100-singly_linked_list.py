@@ -1,26 +1,24 @@
 #!/usr/bin/python3
+"""Define classes for a singly-linked list."""
 
 
 class Node:
-    """Node of a singly linked list.
-    Private instance attribute: data:
-        - property def data(self)
-        - property setter def data(self, value)
-    Private instance attribute: next_node:
-        - property def next_node(self)
-        - property setter def next_node(self, value)
-    Instantiation with data and next_node.
-    """
+    """Represent a node in a singly-linked list."""
 
     def __init__(self, data, next_node=None):
-        """Initializes the data of the node."""
+        """Initializes a new Node.
+        
+        Args:
+            data (int): The data of the new Node.
+            next_node (Node): The next node of the Node.
+        """
         self.data = data
         self.next_node = next_node
 
     @property
     def data(self):
-        """Retrieves the data from the node."""
-        return self.__data
+        """Get/set the data of the Node."""
+        return (self.__data)
 
     @data.setter
     def data(self, value):
@@ -31,7 +29,7 @@ class Node:
 
     @property
     def next_node(self):
-        """Retrieves the next_node."""
+        """Get/set the next_node of the Node."""
         return self.__next_node
 
     @next_node.setter
@@ -42,15 +40,10 @@ class Node:
         self.__next_node = value
 
 class SinglyLinkedList:
-    """ Singly linked list.
-    Private instance attribute: head.
-    Simple instantiation
-    Public instance method: def sorted_insert(self, value).
-    """
-
+    """ Represent a Singly linked list."""
 
     def __init__(self):
-        """Initializes the linked list."""
+        """Initializes a new SinglyLinkedList"""
         self.head = None
 
     def __str__(self):
@@ -81,4 +74,3 @@ class SinglyLinkedList:
             node = node.next_node
         new_node.next_node = node.next_node
         node.next_node = new_node
-    ########
