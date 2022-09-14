@@ -18,7 +18,7 @@ class Node:
     @property
     def data(self):
         """Get/set the data of the Node."""
-        return (self.__data)
+        return self.__data
 
     @data.setter
     def data(self, value):
@@ -30,7 +30,7 @@ class Node:
     @property
     def next_node(self):
         """Get/set the next_node of the Node."""
-        return (self.__next_node)
+        return self.__next_node
 
     @next_node.setter
     def next_node(self, value):
@@ -44,37 +44,33 @@ class SinglyLinkedList:
 
     def __init__(self):
         """Initializes a new SinglyLinkedList"""
-        self.__head = None
-
-    def sorted_insert(self, value):
-        """Inserts a new Node to the SinglyLinkedList.
-
-        The node is inserted into the list at the correct
-        ordered numerical position
-
-        Args:
-            value (Node): The new Node to insert.
-        """
-        new = Node(value)
-
-        if self.__head is None:
-            new.next_node = None
-            self.__head = new
-        elif self.__head.data > value:
-            new.next_node = self.__head
-            self.__head = new
-        else:
-            tmp = self.__head
-            while (tmp.next_node is not None and tmp.next_node.data < value):
-                tmp = tmp.next_node
-            new.next_node = tmp.next_node
-            tmp.next_node = new
+        self.head = None
 
     def __str__(self):
         """Define the print() representation of a SinglyLinkedList."""
-        value = []
-        tmp = self.__head
-        while tmp is not None:
-            values.append(str(tmp.data))
-            tmp = tmp.next_node
-        return ('\n'.join(values))
+        my_str = ""
+        node = self.head
+        while node:
+            my_str += str(node.data)
+            my_str += '\n'
+            node = node.next_node
+        return my_str[:-1]
+
+    def sorted_insert(self, value):
+        """Inserts a node in a sorted linked list."""
+        new_node = Node(value)
+
+        if self.head is None:
+            self.head = new_node
+            return
+
+        if value < self.head.data:
+            new_node.next_node = self.head
+            self.head = new_node
+            return
+
+        node = self.head
+        while node.next_node and node.next_node.data < value:
+            node = node.next_node
+        new_node.next_node = node.next_node
+        node.next_node = new_node
