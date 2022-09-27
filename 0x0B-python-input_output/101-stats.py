@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-""" Reads from standard input and computes vmetrices.
+""" Reads from standard input and computes metrices.
 
 After every ten lines or the input of a keyboard interruption (CTRL + C),
-prints the followingf statistics:
+prints the following statistics:
     - Total file size up to that point.
     - Count of read status  codes up to that point.
 """
