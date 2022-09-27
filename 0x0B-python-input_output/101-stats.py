@@ -7,6 +7,7 @@ prints the followingf statistics:
     - Count of read status  codes up to that point.
 """
 
+
 def print_stats(size, status_codes):
     """print accumulateed metrics.
 
@@ -14,16 +15,17 @@ def print_stats(size, status_codes):
         size (int): The accumulated read file size.
         status_codes (dict): The accumlated count of the status codes.
     """
-    print("File size: {}"format(size))
+    print("File size: {}".format(size))
     for key in sorted(status_codes):
         print("{}: {}".format(key, status_codes[key]))
+
 
 if __name__ == "__main__":
     import sys
 
     size = 0
     status_code = {}
-    valid_codes =  {'200', '301', '400', '401', '403', '404', '405', '500']
+    valid_codes =  ['200', '301', '400', '401', '403', '404', '405', '500']
     count = 0
 
     try:
