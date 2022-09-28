@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-add_addribute = __import__('101-add_attribute').add_attribute
+add_attribute = __import__('101-add_attribute').add_attribute
 
 class MyClass():
     pass
