@@ -25,3 +25,7 @@ and `POST` requests, fetching JSON resources, and interacting with API's (the St
   * [3-error_code.py](./3-error_code.py): Python script sends a request to a given URL and displays the responsse body.
   * Handles HTTP errors.
     * Uses `urllib`.
+
+* **4. What's my Status? #1**
+  * [4-hbtn_status.py](./4-hbtn_status.py): Python script that fetches `https://intranet.hbtn.io/status`.
+  * Uses `requests`.
