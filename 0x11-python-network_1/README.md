@@ -57,4 +57,9 @@ and `POST` requests, fetching JSON resources, and interacting with API's (the St
   * [10-my_github.py](./10-my_github.py): Python script that takes GitHub credential (username and password) and uses the Github API to display the corressponding ID.
   * Usage: `./10-my_github.py <username> <password>`
     * Uses `requests`
+
+* **10. Time for an interview!**
+  * [100-github_commit.py](./100-github_commits.py): Python script that lists the 10 most recent comments of a given GitHub repository using Gitub API.
+  * Usage: `./100-github_commits.py <repository name> <owner name>`
+    * Uses `requests`
 //
