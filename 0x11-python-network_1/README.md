@@ -52,4 +52,9 @@ and `POST` requests, fetching JSON resources, and interacting with API's (the St
     * if noletter is given, sets `q=""`.
     * if the response body is properly formatted and non-empty, displays it as `[<id>] <name>`.
   * Uses `requests`.
+
+* **9. My Github!**
+  * [10-my_github.py](./10-my_github.py): Python script that takes GitHub credential (username and password) and uses the Github API to display the corressponding ID.
+  * Usage: `./10-my_github.py <username> <password>`
+    * Uses `requests`
 //
