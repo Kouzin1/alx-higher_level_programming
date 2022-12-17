@@ -44,4 +44,12 @@ and `POST` requests, fetching JSON resources, and interacting with API's (the St
   * [7-error_code.py](./7-error_code.py): Python script sends a request to a given URL and displays the response body.
   * Handles HTTP errors.
     * Uses `requests`.
+
+* **8. Search API #1**
+  * [8-json_api.py](./8-json_api.py): Python script that sends a `POST` request to `http://0.0.0.0:5000/search_user` with a letter passed as parameter.
+  * Usage: `./8-json_api.py <letter>`
+    * The letter is sent as the value of the variable `q`
+    * if noletter is given, sets `q=""`.
+    * if the response body is properly formatted and non-empty, displays it as `[<id>] <name>`.
+  * Uses `requests`.
 //
