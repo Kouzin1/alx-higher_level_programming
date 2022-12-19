@@ -21,4 +21,9 @@ NOTE: The `curl` behaviour in all `Bash` scripts were written to interact with a
 
 * **3. cURL on Method**
   * [3-methods.sh](./3-methods.sh): Bash script that displays all HTTP methods the server of a given URL will accept.
+
+* **4. cURL headers**
+  * [4-header.sh](./4-header.sh): Bash script that sends `GET` request to a given URL with a header variable `X-School-User-Id=98` and displays the response body.
+
+
 //
