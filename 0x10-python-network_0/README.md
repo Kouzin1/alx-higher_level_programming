@@ -18,4 +18,7 @@ NOTE: The `curl` behaviour in all `Bash` scripts were written to interact with a
 
 * **2. cURL Method**
   * [2-delete.sh](./2-delete.sh): Bash script that sends a `DELETE` request to a given URL and displays the response body.
+
+* **3. cURL on Method**
+  * [3-methods.sh](./3-methods.sh): Bash script that displays all HTTP methods the server of a given URL will accept.
 //
