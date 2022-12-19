@@ -15,4 +15,7 @@ NOTE: The `curl` behaviour in all `Bash` scripts were written to interact with a
 
 * **1. cURL to the end**
   * [1-body.sh](./1-body.sh): Bash script that sends a `GET` request to a given URL and displays the response body for a `200` status code response.
+
+* **2. cURL Method**
+  * [2-delete.sh](./2-delete.sh): Bash script that sends a `DELETE` request to a given URL and displays the response body.
 //
