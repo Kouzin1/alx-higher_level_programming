@@ -1,2 +1,1 @@
-Time complexity is:
 O(log(n))
