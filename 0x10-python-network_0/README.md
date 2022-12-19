@@ -33,4 +33,7 @@ NOTE: The `curl` behaviour in all `Bash` scripts were written to interact with a
 * **6. Find a peak**
   * [6-peak.py](./6-peak.py): [Technical interview preparation] - Python program that finds a peak in a list of unsorted integers.
   * [6-peak.txt](./6-peak.txt): Text file containing the complexity of algorithm.
+
+* **7. Only status code**
+  * [100-status_code.sh](./100-status_code.sh): Bash script that sends a `GET` request to a given URL without using pipes, redirections, ; , or && and displays the status code of the response.
 //
