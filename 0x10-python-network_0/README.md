@@ -25,5 +25,6 @@ NOTE: The `curl` behaviour in all `Bash` scripts were written to interact with a
 * **4. cURL headers**
   * [4-header.sh](./4-header.sh): Bash script that sends `GET` request to a given URL with a header variable `X-School-User-Id=98` and displays the response body.
 
-
+* **5. cURL POST parameters**
+  * [5-post_params.sh](./5-post_params.sh): Bash script that sends a `POST` request to a given URL with the variable `email=test@gmail.com` and subject=I will always be here for PLD and displays the response body.
 //
