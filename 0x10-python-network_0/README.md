@@ -6,6 +6,8 @@ Task six was an algorithm challenge separate from the ovrall project theme compl
 
 ## Tests :heavy_check_mark:
 
+* [tests](./tests): Folder of test files. Provided by ALX.
+
 ## Tasks :page_with_curl:
 
 NOTE: The `curl` behaviour in all `Bash` scripts were written to interact with a server set up on a container provided by ALX.
@@ -27,4 +29,8 @@ NOTE: The `curl` behaviour in all `Bash` scripts were written to interact with a
 
 * **5. cURL POST parameters**
   * [5-post_params.sh](./5-post_params.sh): Bash script that sends a `POST` request to a given URL with the variable `email=test@gmail.com` and subject=I will always be here for PLD and displays the response body.
+
+* **6. Find a peak**
+  * [6-peak.py](./6-peak.py): [Technical interview preparation] - Python program that finds a peak in a list of unsorted integers.
+  * [6-peak.txt](./6-peak.txt): Text file containing the complexity of algorithm.
 //
